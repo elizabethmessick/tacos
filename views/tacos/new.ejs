@@ -1,0 +1,18 @@
+<%- include('../partials/header') %>
+
+<h1>New Taco</h1>
+
+<form action="/tacos" method="POST">
+    <label>Taco Name</label>
+    <input type="text" name="tacoName"><br>
+    <br>
+    <label>Taco Protein</label>
+    <input type="text" name="tacoProtein"><br>
+    <br>
+    <label>Taco Garnish</label>
+    <input type="text" name="tacoGarnish"><br>
+    <br>
+    <input type="submit" value="Add Taco">
+</form>
+
+<%- include('../partials/footer') %>

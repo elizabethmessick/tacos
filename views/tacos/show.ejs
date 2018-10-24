@@ -1,0 +1,24 @@
+<%- include('../partials/header') %>
+
+<h1>That One Taco</h1>
+
+<hr>
+<h3>
+    <%= taco.name %>
+</h3>
+<h4>
+    <%= taco.protein %>
+</h4>
+<p>
+    <%= taco.garnish %>
+</p>
+<a href='/tacos/<%= id %>/edit'><button>Edit</button></a>
+<br>
+<br>
+<form method="POST" action="/tacos/<%= id %>?_method=DELETE">
+    <button class="delete" type="submit">Delete</button>
+</form>
+<hr>
+<br>
+
+<%- include('../partials/footer') %>

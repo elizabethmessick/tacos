@@ -1,0 +1,18 @@
+<%- include('../partials/header') %>
+
+<h1>Update This Taco</h1>
+
+<form action="/tacos/<%= id %>?_method=PUT" method="POST">
+    <label>Taco Name</label>
+    <input type="text" name="tacoName" value="<%= taco.name %>"><br>
+    <br>
+    <label>Taco Protein</label>
+    <input type="text" name="tacoProtein" value="<%= taco.protein %>"><br>
+    <br>
+    <label>Taco Garnish</label>
+    <input type="text" name="tacoGarnish" value="<%= taco.garnish %>"><br>
+    <br>
+    <input type="submit" value="Update This Taco">
+</form>
+
+<%- include('../partials/footer') %>
